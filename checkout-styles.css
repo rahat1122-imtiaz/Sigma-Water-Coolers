@@ -1,0 +1,367 @@
+/* FONTS */
+.poppins {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .poppins-thin, .poppins-thin-italic {
+    font-weight: 100;
+  }
+  
+  .poppins-extralight, .poppins-extralight-italic {
+    font-weight: 200;
+  }
+  
+  .poppins-light, .poppins-light-italic {
+    font-weight: 300;
+  }
+  
+  .poppins-regular, .poppins-regular-italic {
+    font-weight: 400;
+  }
+  
+  .poppins-medium, .poppins-medium-italic {
+    font-weight: 500;
+  }
+  
+  .poppins-semibold, .poppins-semibold-italic {
+    font-weight: 600;
+  }
+  
+  .poppins-bold, .poppins-bold-italic {
+    font-weight: 700;
+  }
+  
+  .poppins-extrabold, .poppins-extrabold-italic {
+    font-weight: 800;
+  }
+  
+  .poppins-black, .poppins-black-italic {
+    font-weight: 900;
+  }
+  
+  .poppins-thin-italic,
+  .poppins-extralight-italic,
+  .poppins-light-italic,
+  .poppins-regular-italic,
+  .poppins-medium-italic,
+  .poppins-semibold-italic,
+  .poppins-bold-italic,
+  .poppins-extrabold-italic,
+  .poppins-black-italic {
+    font-style: italic;
+  }
+  
+  /* General Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header Styles */
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background: #16423c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+  }
+
+
+    /* Title Section */
+    .title {
+        background: linear-gradient(to bottom, #c4dad2, #f7f7f7);
+        display: flex;
+        align-items: center; /* Centers vertically */
+        justify-content: center; /* Centers horizontally */
+        padding: 20px 50px;
+        height: 50vh; /* Adjust based on your design */
+        text-align: center; /* Ensures text is centered */
+    }
+
+    .title h1 {
+        font-size: 8rem;
+        color: #00796b;
+        line-height: 1.2;
+        font-weight: bold;
+        padding-top:50px;
+        margin: 0; /* Removes extra margin for perfect alignment */
+    }
+
+    /* Checkout Section Styles */
+.checkout-section {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cart-items {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+#cart-items p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.bill-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bill-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.bill-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.checkout-btn-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Align the buttons vertically */
+    gap: 20px; /* Add space between the buttons */
+    margin-top: 20px;
+}
+
+/* Button Styles */
+
+.proceed-to-payment-btn, .cancel-order-btn {
+    background-color: #007bff; /* Blue for Proceed */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.cancel-order-btn {
+    background-color: #dc3545; /* Red for Cancel */
+}
+
+.proceed-to-payment-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.cancel-order-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+/* About Us Section */
+.about-us-redirect {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 60px 20px;
+  color: #2d5244;
+}
+
+.about-us-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-us-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-us-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #00796b;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.about-us-btn:hover {
+  background-color: #005a4e;
+}
+
+
+  /* Footer */
+  .footer {
+    background: #e9efec;
+    color: #6a9c89;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  p.medias {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons i {
+    margin: 0 10px 10px;
+    font-size: 2rem;
+  }
+  
+  .flogo {
+    margin-top: 40px;
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .email {
+    margin-bottom: 20px;
+  }
+  
+  .location-text {
+    color: #16423c;
+    text-align: center;
+  }
+  
+  .maps-location {
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #00796b;
+    border-radius: 10px;
+  }
+  
+  .maps-location iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  /* Copyright Section */
+  .copyright {
+    background-color: #16423c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+
+
+  /* Responsive Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Typography */
+html {
+  font-size: 16px; /* Base font size for accessibility */
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+}
+
+.hamburger-menu span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  /* Hamburger Menu for Mobile */
+  .hamburger-menu {
+    display: flex;
+  }
+}

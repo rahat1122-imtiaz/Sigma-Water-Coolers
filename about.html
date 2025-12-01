@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Sigma Waters</title>
+  <script src="script.js"></script> 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400..700&display=swap');
+  </style>
+  <link rel="stylesheet" href="about-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="LOGO">
+    </div>
+    
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <!-- title Section -->
+    <section class="title">
+        <div class="title-text">
+          <h1>ABOUT US</h1>
+          <h2>SIGMA WATERS</h2>
+          <p>Dedicated to revolutionizing hydration through advanced cooling and filtration solutions.</p>
+        </div>
+      </section>
+
+  <!-- About Us Content -->
+  <section class="about-us-content">
+    <div class="about-section">
+      <div class="text">
+        <h2>Our Mission</h2>
+        <p>At Sigma Waters, we are committed to providing high-quality, eco-friendly cooling systems that prioritize convenience, efficiency, and sustainability. Our mission is to ensure everyone has access to pure, chilled water with minimal environmental impact.</p>
+      </div>
+      <div class="image">
+        <img src="our mission.png" alt="Our Mission">
+      </div>
+    </div>
+
+    <div class="about-section reverse">
+      <div class="text">
+        <h2>Our Vision</h2>
+        <p>We envision a world where hydration is not only accessible but also eco-conscious. Sigma Waters aims to set a global standard for innovative and sustainable cooling technologies, making a positive impact on the environment and communities worldwide.</p>
+      </div>
+      <div class="image">
+        <img src="https://images.pexels.com/photos/29601691/pexels-photo-29601691.jpeg" alt="Our Vision">
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="text">
+        <h2>Why Choose Us?</h2>
+        <p>Our products stand out for their durability, advanced technology, and energy-efficient designs. With Sigma Waters, you are not just purchasing a cooler—you are investing in a healthier, greener, and more convenient future.</p>
+      </div>
+      <div class="image">
+        <img src="why us.jpg" alt="Why Choose Us">
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Image Slider -->
+  <section class="product-images">
+    <h2 id="headings">Product Images</h2>
+    <div class="slider">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="image-box">
+              <img src="https://images.pexels.com/photos/33957225/pexels-photo-33957225.jpeg" alt="Placeholder">
+            </div>
+            <!-- Slide 2 -->
+            <div class="image-box">
+              <img src="https://images.pexels.com/photos/30801664/pexels-photo-30801664.jpeg" alt="Placeholder">
+            </div>
+            <!-- Slide 3 -->
+            <div class="image-box">
+              <img src="https://images.pexels.com/photos/7845036/pexels-photo-7845036.jpeg" alt="Placeholder">
+            </div>
+            <!-- Slide 4 -->
+            <div class="image-box">
+              <img src="https://images.pexels.com/photos/6831179/pexels-photo-6831179.jpeg" alt="Placeholder">
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    
+    navLinks.classList.toggle('active');
+    
+    // Optional: Animate hamburger menu icon
+    hamburgerMenu.classList.toggle('open');
+  }
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const header = document.querySelector('.header');
+
+    if (!header.contains(event.target) && navLinks.classList.contains('active')) {
+      navLinks.classList.remove('active');
+      hamburgerMenu.classList.remove('open');
+    }
+  });
+</script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img class="flogo" src="footer logo.png" alt="Sigma waters">
+        <p class="medias">Follow us on social media</p>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <p class="email">Email: waters@sigma.com</p>
+      </div>
+      <div>
+        <h3 class="location-text">Location</h3>
+        <div class="maps-location">
+          <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=FAST%20University%20(Chiniot-Faisalabad%20Campus),%20Sargodha%20Road,%20Chiniot,%20Punjab+(Sigma%20Waters)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright">
+    <p class="copyright-text">© 2024 Sigma Waters | All Rights Reserved</p>
+  </section>
+</body>
+</html>
